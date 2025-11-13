@@ -3,17 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <title>Saurabh Shetkar | Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header class="nav">
-  <h1 class="brand">Saurabh Shetkar</h1>
-  <nav>
+  <div class="left">
+    <a href="index.html" class="brand-link">
+      <img src="logo.svg" alt="logo" class="logo">
+    </a>
+    <h1 class="brand-text">Saurabh Shetkar</h1>
+  </div>
+
+  <nav class="right">
     <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
+    <button id="dmToggle" class="dm-btn" title="Toggle dark mode">🌙</button>
   </nav>
 </header>
 
@@ -22,25 +30,33 @@
   <section class="hero">
     <div>
       <h2>Hello, I’m <span class="highlight">Saurabh</span></h2>
-      <p>Software Developer | Game Developer | Prompt Engineer</p>
-      <p>I build modern websites, interactive games, and innovative software projects.</p>
-      <a href="projects.html" class="btn">View My Work</a>
+      <p class="lead">Software Developer • Game Developer • Prompt Engineer</p>
+      <p>I build modern websites, interactive educational games, and AI-powered projects that solve real problems. Experienced in Unity, Python, IoT and cloud integrations.</p>
+      <p style="margin-top:12px">
+        <a href="projects.html" class="btn">View My Work</a>
+        <a href="resume.pdf" class="btn outline" download>Download Resume</a>
+      </p>
     </div>
-    <img src="team.jpg" alt="My Photo" class="hero-img">
+    <img src="team.jpg" alt="Saurabh Shetkar" class="hero-img">
   </section>
 
   <section class="skills">
     <h2>Skills</h2>
     <div class="skill-grid">
       <div class="card">Python</div>
-      <div class="card">Data Structures</div>
-      <div class="card">Unity Game Development</div>
-      <div class="card">AWS Cloud</div>
-      <div class="card">Linux (Red Hat, Ubuntu)</div>
+      <div class="card">Data Structures & Algorithms</div>
+      <div class="card">Unity (Game Dev)</div>
       <div class="card">Prompt Engineering</div>
+      <div class="card">AWS (Cloud)</div>
+      <div class="card">Linux (Red Hat, Ubuntu)</div>
       <div class="card">GitHub</div>
       <div class="card">Blender</div>
     </div>
   </section>
 
-</ma
+</main>
+
+<footer>© <span id="year"></span> Saurabh Shetkar</footer>
+<script src="script.js"></script>
+</body>
+</html>
