@@ -1,33 +1,31 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Contact | Saurabh</title>
+  <title>Contact — Saurabh</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="nav">
-  <div class="left">
-    <a href="index.html" class="brand-link"><img src="logo.svg" alt="logo" class="logo"></a>
-    <h1 class="brand-text">Saurabh Shetkar</h1>
+<header class="header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="logo.svg" class="logo"><span>Saurabh Shetkar</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
   </div>
-  <nav class="right">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html" class="active">Contact</a>
-    <button id="dmToggle4" class="dm-btn" title="Toggle dark mode">🌙</button>
-  </nav>
 </header>
 
-<main class="container">
-  <h2>Contact Me</h2>
+<main class="page-container">
+  <h1>Contact</h1>
 
-  <p><strong>Email:</strong> <a href="mailto:saurabhshetkar2003@gmail.com">saurabhshetkar2003@gmail.com</a></p>
+  <p><strong>Email:</strong> saurabhshetkar2004@gmail.com</p>
   <p><strong>Phone:</strong> +91 8830561178</p>
-  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saurabh-shetkar-2a3529336/" target="_blank">linkedin.com/in/saurabh-shetkar-2a3529336</a></p>
+  <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/saurabh-shetkar-2a3529336" target="_blank">View Profile</a></p>
 
   <hr>
 
@@ -35,12 +33,15 @@
     <input name="name" placeholder="Your name" required>
     <input name="email" type="email" placeholder="Your email" required>
     <textarea name="message" placeholder="Your message" required></textarea>
-    <button type="submit">Send Message</button>
+    <button class="btn primary">Send</button>
   </form>
+
 </main>
 
-<footer>© <span id="year"></span> Saurabh Shetkar</footer>
+<footer class="footer">
+  © <span id="year"></span> Saurabh Shetkar
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
-
