@@ -3,37 +3,46 @@
 <head>
   <meta charset="utf-8">
   <title>About | Saurabh Shetkar</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="nav">
-  <h1 class="brand">Saurabh Shetkar</h1>
-  <nav>
+  <div class="left">
+    <a href="index.html" class="brand-link"><img src="logo.svg" alt="logo" class="logo"></a>
+    <h1 class="brand-text">Saurabh Shetkar</h1>
+  </div>
+  <nav class="right">
     <a href="index.html">Home</a>
     <a href="about.html" class="active">About</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
+    <button id="dmToggle3" class="dm-btn" title="Toggle dark mode">🌙</button>
   </nav>
 </header>
 
 <main class="container">
   <h2>About Me</h2>
-  <p>I am an enthusiastic and results-driven Software Developer with strong foundations in Python, Data Structures, Unity Game Development, and Cloud Technologies.</p>
+  <p><strong>Saurabh Shetkar</strong> — Software Developer and Game Developer based in Pune, Maharashtra. I build interactive learning experiences and AI-integrated software. I hold a B.Tech in Electronics & Telecommunication and have experience in Unity game design, IoT projects, and cloud integrations.</p>
 
-  <p>I build interactive educational games, AI-powered applications, and practical real-world software solutions. I am passionate about merging storytelling with technology and creating learning experiences through game-based development.</p>
+  <h3>Summary</h3>
+  <p>Enthusiastic and results-driven developer with practical experience in Python, Unity, prompt engineering, and embedded IoT systems. I design end-to-end solutions—from hardware & backend logic to front-end experiences and deployment.</p>
 
-  <h3>My Expertise</h3>
+  <h3>Education</h3>
+  <p>Vishwakarma Institute of Information Technology — B.Tech (Electronics & Telecommunication)</p>
+
+  <h3>Certifications</h3>
   <ul>
-    <li>Software Development</li>
-    <li>Game Development using Unity</li>
-    <li>Prompt Engineering</li>
-    <li>Cloud Computing (AWS)</li>
-    <li>Linux Administration</li>
-    <li>AI + IoT Projects</li>
+    <li>Python Fundamentals (Infosys Springboard)</li>
+    <li>Red Hat Linux Administration (Foundational)</li>
+    <li>AWS Fundamentals</li>
   </ul>
 
-  <img src="team.jpg" class="hero-img" alt="My Photo">
+  <h3>Download</h3>
+  <p><a href="resume.pdf" download>Download full resume (PDF)</a></p>
+
+  <img src="team.jpg" class="hero-img" alt="Saurabh photo" style="margin-top:18px">
 </main>
 
 <footer>© <span id="year"></span> Saurabh Shetkar</footer>
