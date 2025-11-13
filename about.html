@@ -1,51 +1,42 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>About | Saurabh Shetkar</title>
+  <title>About — Saurabh</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="nav">
-  <div class="left">
-    <a href="index.html" class="brand-link"><img src="logo.svg" alt="logo" class="logo"></a>
-    <h1 class="brand-text">Saurabh Shetkar</h1>
+<header class="header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="logo.svg" class="logo"><span>Saurabh Shetkar</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
-  <nav class="right">
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <button id="dmToggle3" class="dm-btn" title="Toggle dark mode">🌙</button>
-  </nav>
 </header>
 
-<main class="container">
-  <h2>About Me</h2>
-  <p><strong>Saurabh Shetkar</strong> — Software Developer and Game Developer based in Pune, Maharashtra. I build interactive learning experiences and AI-integrated software. I hold a B.Tech in Electronics & Telecommunication and have experience in Unity game design, IoT projects, and cloud integrations.</p>
+<main class="page-container">
+  <h1>About Me</h1>
+  <p>I am a passionate software developer from Pune with skills in Python, Unity, AI, and IoT systems. I create educational games, automation tools, and real-world engineering solutions.</p>
 
-  <h3>Summary</h3>
-  <p>Enthusiastic and results-driven developer with practical experience in Python, Unity, prompt engineering, and embedded IoT systems. I design end-to-end solutions—from hardware & backend logic to front-end experiences and deployment.</p>
+  <h2>Education</h2>
+  <p>B.Tech in Electronics & Telecommunication — VIIT Pune</p>
 
-  <h3>Education</h3>
-  <p>Vishwakarma Institute of Information Technology — B.Tech (Electronics & Telecommunication)</p>
+  <h2>Resume</h2>
+  <a href="resume.pdf" download class="btn primary">Download Resume</a>
 
-  <h3>Certifications</h3>
-  <ul>
-    <li>Python Fundamentals (Infosys Springboard)</li>
-    <li>Red Hat Linux Administration (Foundational)</li>
-    <li>AWS Fundamentals</li>
-  </ul>
-
-  <h3>Download</h3>
-  <p><a href="resume.pdf" download>Download full resume (PDF)</a></p>
-
-  <img src="team.jpg" class="hero-img" alt="Saurabh photo" style="margin-top:18px">
+  <img src="team.jpg" class="about-img">
 </main>
 
-<footer>© <span id="year"></span> Saurabh Shetkar</footer>
+<footer class="footer">
+  © <span id="year"></span> Saurabh Shetkar
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
