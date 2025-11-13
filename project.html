@@ -3,48 +3,51 @@
 <head>
   <meta charset="utf-8">
   <title>Projects | Saurabh Shetkar</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="nav">
-  <h1 class="brand">Saurabh Shetkar</h1>
-  <nav>
+  <div class="left">
+    <a href="index.html" class="brand-link"><img src="logo.svg" alt="logo" class="logo"></a>
+    <h1 class="brand-text">Saurabh Shetkar</h1>
+  </div>
+  <nav class="right">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html" class="active">Projects</a>
     <a href="contact.html">Contact</a>
+    <button id="dmToggle2" class="dm-btn" title="Toggle dark mode">🌙</button>
   </nav>
 </header>
 
 <main class="container">
-
-  <h2>My Projects</h2>
+  <h2>Selected Projects</h2>
 
   <div class="project-grid">
 
     <div class="project-card">
+      <img src="proj1.jpg" alt="FixWithPython" class="proj-img">
       <h3>FixWith Python (Educational Game)</h3>
-      <p>An interactive game that teaches Python through real-time problem-solving and narrative gameplay. Created using Unity.</p>
+      <p>An interactive Unity game that teaches Python through puzzles and story-driven levels. Includes gameplay design, scene scripting, and problem-based learning tasks.</p>
     </div>
 
     <div class="project-card">
+      <img src="proj2.jpg" alt="SleepApnea" class="proj-img">
       <h3>AI-Powered Sleep Apnea Detection</h3>
-      <p>IoT-based real-time health monitoring system using ESP32 + MAX30102 sensor with AI models like Random Forest & SVM.</p>
+      <p>IoT system using ESP32 + MAX30102 sensor. Implemented ML models (Random Forest, SVM) for real-time event detection and Firebase-based alerting.</p>
     </div>
 
     <div class="project-card">
+      <img src="proj3.jpg" alt="Ballista" class="proj-img">
       <h3>Ballista — Educational Projectile System</h3>
-      <p>A 3D-modeled physics learning system with ESP32, motors, sensors, and wireless control.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Automatic Seat Lighting System</h3>
-      <p>A smart seating system using weight sensors to automatically illuminate theater seats.</p>
+      <p>3D-modeled system demonstrating projectile motion using motors, sensors and embedded control (ESP32). Used for hands-on physics education.</p>
     </div>
 
   </div>
 
+  <p style="margin-top:16px;color:#666">Tip: Replace the project images (proj1.jpg, proj2.jpg, proj3.jpg) with screenshots or photos from your projects for a stronger portfolio.</p>
 </main>
 
 <footer>© <span id="year"></span> Saurabh Shetkar</footer>
